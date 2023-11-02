@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0;
+  height: calc(100vh - 40px);
+  .step {
+    margin-bottom: 10px;
+  }
+}
