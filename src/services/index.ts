@@ -4,7 +4,6 @@ import { TaskState } from "../models";
 export const fetchTasks = (): Promise<TaskState> =>
   fetch(FETCH.LIST, {
     method: "GET",
-    // mode: "no-cors",
     headers: {
       "Content-Type": "application/json; charset=utf-8",
       "Access-Control-Allow-Origin": "*",
@@ -17,7 +16,6 @@ export const submitTask = (
 ): Promise<void | Response> =>
   fetch(FETCH.SUBMIT, {
     method: "POST",
-    // mode: "no-cors",
     headers: {
       "Content-Type": "application/json; charset=utf-8",
       "Access-Control-Allow-Origin": "*",

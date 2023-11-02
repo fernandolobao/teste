@@ -37,7 +37,7 @@ function App() {
       loadingStep === LOADING.FIND_TOP_EARNER &&
       topAlphaTransactions.length > 0
     ) {
-      dispatch(submitTaskAction({ result: topAlphaTransactions })); // no, change this
+      dispatch(submitTaskAction({ result: topAlphaTransactions }));
     }
   }, [loadingStep]);
 
